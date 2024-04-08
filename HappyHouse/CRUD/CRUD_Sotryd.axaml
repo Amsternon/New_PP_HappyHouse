@@ -1,7 +1,7 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/sotr.ico"
+        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/sotr.ico"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="650"
         MaxWidth="450"
@@ -9,7 +9,7 @@
         x:Class="HappyHouse.CRUD.CRUD_Sotryd"
         Title="Сотрудники">
      <Grid>
-         <Image Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Sotryd.png"></Image>
+         <Image Source="/Resources/Sotryd.png"></Image>
          <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Margin = "50 10 0 0" FontSize = "20" FontWeight="Bold"> Изменение данных о сотруднике</TextBlock>
             <StackPanel Orientation="Horizontal">

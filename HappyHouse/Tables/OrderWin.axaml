@@ -2,14 +2,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Ordering.ico"
+        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/Ordering.ico"
         mc:Ignorable="d" d:DesignWidth="808" d:DesignHeight="460"
         MaxWidth="808"
         MaxHeight="460"
         x:Class="HappyHouse.Tables.OrderWin"
         Title="OrderWin">
     <Grid>
-        <Image Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/Order.png" Width="1000" Height="450"/>
+        <Image Source="/Resources/Order.png" Width="1000" Height="450"/>
         <StackPanel Orientation="Vertical">
             <TextBlock Foreground="Black" Margin = "10 10 0 0" FontSize = "20" FontWeight="Bold"> Таблица "Заказы"</TextBlock>
             <StackPanel Orientation="Horizontal">
@@ -21,17 +21,17 @@
                 <StackPanel Orientation="Horizontal">
                     <StackPanel Margin="10 12 00 0">
                         <Button Name="Add" Click="AddData">
-                            <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/OrdAdd.ico"></Image>
+                            <Image Width="25" Height="25" Source="/Resources/OrdAdd.ico"></Image>
                         </Button>
                     </StackPanel>
                     <StackPanel Margin="10 12 00 0">
                         <Button Name="Update" Click = "Edit">
-                            <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/red.ico"></Image>
+                            <Image Width="25" Height="25" Source="/Resources/red.ico"></Image>
                         </Button>
                     </StackPanel>
                     <StackPanel Margin="10 12 00 0">
                         <Button Name="Delete" Click="Del">
-                            <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/trash.ico"></Image>
+                            <Image Width="25" Height="25" Source="/Resources/trash.ico"></Image>
                         </Button>
                     </StackPanel>
 
@@ -51,11 +51,11 @@
         </DataGrid>
             <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
                 <Button Name="Back" Click="Back_OnClick">
-                    <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/back.ico"></Image>
+                    <Image Width="25" Height="25" Source="/Resources/back.ico"></Image>
                 </Button>
                 <StackPanel Margin="10 0 00 0">
                 <Button Name="Reset" Click="Reset_OnClick">
-                    <Image Width="25" Height="25" Source="C:\Users\vitsn\RiderProjects\HappyHouse\Resource/reset.ico"></Image>
+                    <Image Width="25" Height="25" Source="/Resources/reset.ico"></Image>
                 </Button>
                 </StackPanel>
             </StackPanel>
