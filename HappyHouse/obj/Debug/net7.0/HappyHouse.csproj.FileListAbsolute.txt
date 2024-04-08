@@ -144,7 +144,7 @@ C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\obj\Debug\net7.0\Avalonia\ori
 C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\obj\Debug\net7.0\refint\HappyHouse.dll
 C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\obj\Debug\net7.0\HappyHouse.dll
 C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\obj\Debug\net7.0\HappyHouse.pdb
-C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\obj\Debug\net7.0\HappyHouse.csproj.CopyComplete
 C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\obj\Debug\net7.0\HappyHouse.genruntimeconfig.cache
 C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\obj\Debug\net7.0\ref\HappyHouse.dll
 C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\obj\Debug\net7.0\HappyHouse.sourcelink.json
+C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\obj\Debug\net7.0\HappyHouse.csproj.Up2Date

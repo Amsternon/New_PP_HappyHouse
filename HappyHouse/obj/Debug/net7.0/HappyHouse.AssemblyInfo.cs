@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HappyHouse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+105c3065a24f7d82357ffc84c204aa85b1fd065a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff177f46f1e0e3b9d4da6e47e764811ed28d47ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("HappyHouse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HappyHouse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

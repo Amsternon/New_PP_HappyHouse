@@ -50,10 +50,7 @@ public partial class CRUD_Sotryd : Window
             {
                 conn = new MySqlConnection(connStr);
                 conn.Open();
-                string upd = "UPDATE worker SET Dolzhnost = " + Convert.ToInt32(Jobs.Text) + ", Surname = '" +
-                             Surname.Text + "', Name = " + Name.Text + ", Otchestvo = " + Otchestvo.Text +
-                             ", Telephone = " + Telephone.Text + ", email = " + Email.Text + ", WHERE ID = " +
-                             Convert.ToInt64(Id.Text) + ";";
+                string upd = "UPDATE worker SET Dolzhnost = " + Convert.ToInt32(Jobs.Text) + ", Surname = '" + Surname.Text + "', Name = '" + Name.Text + "', Otchestvo = '" + Otchestvo.Text + "', Telephone = '" + Telephone.Text + "', email = '" + Email.Text + "' WHERE ID = '" + Convert.ToInt64(Id.Text) + "';";
                 MySqlCommand cmd = new MySqlCommand(upd, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
