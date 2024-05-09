@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZXyoZvD3t0nSnS8e9FshGkdKi18y00+bXqFuXVSRsP29S8rQO5eTdnUkbnFkfZn73vIBgU/KxN1tr6LDUISCag==",
+  "dgSpecHash": "ZoG5++XpiRaD8emaa5UyN0GEREh0atEF0LHFvLpSdf/mbxIlrvMTnq8+332WGxCYQfslLvoiLdu6xqRa6BKD/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitsn\\RiderProjects\\HappyHouse\\HappyHouse\\HappyHouse.csproj",
+  "projectFilePath": "C:\\Users\\vitsn\\OneDrive\\Рабочий стол\\HappyHouse\\HappyHouse\\HappyHouse.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitsn\\.nuget\\packages\\avalonia\\11.0.6\\avalonia.11.0.6.nupkg.sha512",
     "C:\\Users\\vitsn\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2023020321\\avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",
@@ -92,10 +92,10 @@
     "C:\\Users\\vitsn\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\vitsn\\.nuget\\packages\\tmds.dbus.protocol\\0.15.0\\tmds.dbus.protocol.0.15.0.nupkg.sha512",
     "C:\\Users\\vitsn\\.nuget\\packages\\zstdsharp.port\\0.7.1\\zstdsharp.port.0.7.1.nupkg.sha512",
-    "C:\\Users\\vitsn\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\vitsn\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\vitsn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\vitsn\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+    "C:\\Users\\vitsn\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\vitsn\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\vitsn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\vitsn\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
   ],
   "logs": []
 }

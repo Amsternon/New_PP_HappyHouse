@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitsn\\RiderProjects\\HappyHouse\\HappyHouse\\HappyHouse.csproj": {}
+    "C:\\Users\\vitsn\\OneDrive\\Рабочий стол\\HappyHouse\\HappyHouse\\HappyHouse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitsn\\RiderProjects\\HappyHouse\\HappyHouse\\HappyHouse.csproj": {
+    "C:\\Users\\vitsn\\OneDrive\\Рабочий стол\\HappyHouse\\HappyHouse\\HappyHouse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitsn\\RiderProjects\\HappyHouse\\HappyHouse\\HappyHouse.csproj",
+        "projectUniqueName": "C:\\Users\\vitsn\\OneDrive\\Рабочий стол\\HappyHouse\\HappyHouse\\HappyHouse.csproj",
         "projectName": "HappyHouse",
-        "projectPath": "C:\\Users\\vitsn\\RiderProjects\\HappyHouse\\HappyHouse\\HappyHouse.csproj",
+        "projectPath": "C:\\Users\\vitsn\\OneDrive\\Рабочий стол\\HappyHouse\\HappyHouse\\HappyHouse.csproj",
         "packagesPath": "C:\\Users\\vitsn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitsn\\RiderProjects\\HappyHouse\\HappyHouse\\obj\\",
+        "outputPath": "C:\\Users\\vitsn\\OneDrive\\Рабочий стол\\HappyHouse\\HappyHouse\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vitsn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\vitsn\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,19 +81,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
+              "version": "[7.0.18, 7.0.18]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.17, 7.0.17]"
+              "version": "[7.0.18, 7.0.18]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
+              "version": "[7.0.18, 7.0.18]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
+              "version": "[7.0.18, 7.0.18]"
             }
           ],
           "frameworkReferences": {
@@ -107,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

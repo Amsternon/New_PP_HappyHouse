@@ -24,7 +24,7 @@ public partial class CRUD_Goods : Window
     }
 
     private MySqlConnection conn;
-    string connStr = "server=127.0.0.1;database=abd10_1;port=3306;User Id=root;password=12345";
+    string connStr = "server=127.0.0.1;database=abd10;port=3306;User Id=root;password=12345";
 
     private void Save_OnClick(object? sender, RoutedEventArgs e)
     {

@@ -13,42 +13,42 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HappyHouse
-build_property.ProjectDir = C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\
+build_property.ProjectDir = C:\Users\vitsn\OneDrive\Рабочий стол\HappyHouse\HappyHouse\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/App.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/CRUD/CRUD_ClinUser.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/CRUD/CRUD_ClinUser.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/CRUD/CRUD_Goods.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/CRUD/CRUD_Goods.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/CRUD/CRUD_OrderWin.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/CRUD/CRUD_OrderWin.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/CRUD/CRUD_Sotryd.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/CRUD/CRUD_Sotryd.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/MainWindow.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/Registration.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Registration.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/Tables/ClinUser.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Tables/ClinUser.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/Tables/GoodsWin.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Tables/GoodsWin.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/Tables/OrderWin.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Tables/OrderWin.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/Tables/sotrydnik.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Tables/sotrydnik.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/vitsn/RiderProjects/HappyHouse/HappyHouse/Top.axaml]
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Top.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
