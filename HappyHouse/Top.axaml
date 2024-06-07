@@ -2,7 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/menu.ico"
+        Icon="C:\Users\vitsn\OneDrive\Рабочий стол\HappyHouse\HappyHouse\Resources/menu.ico"
         mc:Ignorable="d" d:DesignWidth="650" d:DesignHeight="450"
         MaxHeight="390"
         MaxWidth="550"
@@ -10,9 +10,9 @@
         x:Class="HappyHouse.Top"
         Title="Навигация">
         <Grid>
-                <Image Source="/Resources/new_menu.jpg"></Image>
+                <Image Height="390" Width="550" Source="/Resources/Menu.jpg"></Image>
                 <StackPanel Orientation="Vertical">
-                        <TextBlock Margin = "10 10 0 0" FontSize = "20" HorizontalAlignment="Center" Foreground="Khaki" FontWeight="Bold"> Выбор таблицы для просмотра</TextBlock>
+                        <TextBlock Margin = "10 10 0 0" FontSize = "20" HorizontalAlignment="Center" Foreground="Black" FontWeight="Bold"> Навигация</TextBlock>
                         <StackPanel Orientation="Vertical">
                                 <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
                                         <Button Background="Black" Foreground="Aqua" Name="user" Content="Клиенты" Click="Users"></Button>
@@ -30,8 +30,11 @@
                                         <Button Background="Black" Foreground="Aqua" Name="rab" Content="Сотрудники" Click="Sotryd"></Button>
                                         <TextBlock FontWeight="Bold" Margin = "10 10 10 10"> - информация о сотрудниках</TextBlock>
                                 </StackPanel>
-
-                                <StackPanel Orientation="Horizontal" Margin="10 100 0 0">
+                                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                                        <Button Background="Black" Foreground="Aqua" Name="Whouse" Content="Склад" Click="Who"></Button>
+                                        <TextBlock FontWeight="Bold" Margin = "10 10 10 10"> - данные склада</TextBlock>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="10 45 0 0">
                                         <Button Background="Black" Foreground="Aqua" Name="exit" Content="Выход" Click="Exit_OnClick"></Button>
                                 </StackPanel>
                         </StackPanel>

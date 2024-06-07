@@ -8,6 +8,7 @@
         <entry key="HappyHouse/CRUD/CRUD_Goods.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/CRUD/CRUD_OrderWin.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/CRUD/CRUD_Sotryd.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/CRUD/CRUD_sklad.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/CRUD/СRUD_tablewares.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/MainWindow.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/Registration.axaml" value="HappyHouse/HappyHouse.csproj" />
@@ -15,6 +16,7 @@
         <entry key="HappyHouse/Tables/GoodsWin.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/Tables/Order.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/Tables/OrderWin.axaml" value="HappyHouse/HappyHouse.csproj" />
+        <entry key="HappyHouse/Tables/Sklad.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/Tables/Worker.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/Tables/sotrydnik.axaml" value="HappyHouse/HappyHouse.csproj" />
         <entry key="HappyHouse/Tables/tableware.axaml" value="HappyHouse/HappyHouse.csproj" />

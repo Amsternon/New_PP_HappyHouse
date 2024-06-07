@@ -53,4 +53,10 @@ public partial class Top : Window
         this.Close();
         ord.Show();
     }
+    private void Who(object? sender, RoutedEventArgs e)
+    {
+        Sklad Whouse = new Sklad();
+        this.Close();
+        Whouse.Show();
+    }
 }

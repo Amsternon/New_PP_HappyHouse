@@ -42,7 +42,6 @@
       <None Remove="Resources\posyda.jpg" />
       <AvaloniaResource Include="Resources\posyda.jpg" />
       <None Remove="Resources\Register.ico" />
-      <AvaloniaResource Include="Resources\Register.ico" />
       <None Remove="Resources\posyd.ico" />
       <AvaloniaResource Include="Resources\posyd.ico" />
       <None Remove="Resources\Ordering.ico" />
@@ -63,5 +62,17 @@
       <AvaloniaResource Include="Resources\Client.jpg" />
       <None Remove="Resources\back.ico" />
       <AvaloniaResource Include="Resources\back.ico" />
+      <None Remove="Resources\Regs.ico" />
+      <AvaloniaResource Include="Resources\Regs.ico" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <AvaloniaXaml Remove="Registration.axaml" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <Compile Remove="Registration.axaml.cs" />
     </ItemGroup>
 </Project>

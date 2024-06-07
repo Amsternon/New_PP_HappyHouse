@@ -1,10 +1,10 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/Register.ico"
+        Icon="C:\Users\vitsn\OneDrive\Рабочий стол\HappyHouse\HappyHouse\Resources/Regs.ico"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="600"
-        MaxWidth="450"
+        mc:Ignorable="d" d:DesignWidth="850" d:DesignHeight="650"
+        MaxWidth="850"
         MaxHeight="650"
         x:Class="HappyHouse.CRUD.CRUD_Goods"
         Title="Действие с данными">
@@ -17,20 +17,28 @@
                 <TextBox Name="id" x:CompileBindings="False" Text="{Binding ID}" Width="200" Height="5" Margin = "82 0 0 0" Watermark="Индивидуальный номер"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Поставщик: </TextBlock>
+                <TextBox Name="SuppliersName" x:CompileBindings="False" Text="{Binding SuppliersName}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Введите Код"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Наименование: </TextBlock>
-                <TextBox Name="name" x:CompileBindings="False" Text="{Binding Name}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Введите наименование"></TextBox>
+                <TextBox Name="name" x:CompileBindings="False" Text="{Binding Name_tab}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Введите Код"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Материал: </TextBlock>
-                <TextBox Name="namer" x:CompileBindings="False" Text="{Binding Namer}" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Используемый никнейм"></TextBox>
+                <TextBox Name="namer" x:CompileBindings="False" Text="{Binding Namer}" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Введите Код"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Цвет: </TextBlock>
-                <TextBox Name="Named" x:CompileBindings="False" Text="{Binding Named}" Width="200" Height="5" Margin = "125 0 0 0" Watermark="Используемый никнейм"></TextBox>
+                <TextBox Name="Named" x:CompileBindings="False" Text="{Binding Named}" Width="200" Height="5" Margin = "125 0 0 0" Watermark="Введите Код"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Цена: </TextBlock>
                 <TextBox Name="price" x:CompileBindings="False" Text="{Binding price}" Width="200" Height="5" Margin = "125 0 0 0" Watermark="Стоимость"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Наличие: </TextBlock>
+                <TextBox Name="Name_ava" x:CompileBindings="False" Text="{Binding Name_ava}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Введите Код"></TextBox>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">

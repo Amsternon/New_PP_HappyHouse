@@ -1,7 +1,7 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/Register.ico"
+        Icon="C:\Users\vitsn\OneDrive\Рабочий стол\HappyHouse\HappyHouse\Resources/Regs.ico"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="600"
         x:Class="HappyHouse.CRUD.CRUD_ClinUser"
@@ -12,7 +12,7 @@
     <Grid>
         <Image Source="/Resources/Sotryd.png"></Image>
         <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold"> Регистрация</TextBlock>
+            <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold"> Работа с данными</TextBlock>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Идентификатор: </TextBlock>
                 <TextBox Name="ID" x:CompileBindings="False" Text="{Binding ID}" Width="200" Height="5" Margin = "10 0 0 0" Watermark="Индивидуальный номер"></TextBox>
@@ -23,19 +23,19 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Имя: </TextBlock>
-                <TextBox Name="name" x:CompileBindings="False" Text="{Binding Name}" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Введите имя"></TextBox>
+                <TextBox Name="name" x:CompileBindings="False" Text="{Binding Name_clin}" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Введите имя"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin = "0 25 0 0">Логин: </TextBlock>
-                <TextBox Name="login" x:CompileBindings="False" Text="{Binding Login}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Используемый никнейм"></TextBox>
+                <TextBlock Margin = "0 25 0 0">Отчество: </TextBlock>
+                <TextBox Name="Lastname" x:CompileBindings="False" Text="{Binding Lastname}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Введите отчество"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin = "0 25 0 0">Пароль: </TextBlock>
-                <TextBox Name="password" x:CompileBindings="False" Text="{Binding Password}" Width="200" Height="5" Margin = "65 0 0 0" Watermark="Введите пароль"></TextBox>
+                <TextBlock Margin = "0 25 0 0">Адрес: </TextBlock>
+                <TextBox Name="Adress" x:CompileBindings="False" Text="{Binding Adress}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Введите Адрес"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Телефон: </TextBlock>
-                <TextBox Name="telephone" x:CompileBindings="False" Text="{Binding Telephone}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Телефон"></TextBox>
+                <TextBox Name="telephone" x:CompileBindings="False" Text="{Binding Telephone}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Телефон"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Почта: </TextBlock>

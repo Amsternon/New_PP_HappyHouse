@@ -29,13 +29,13 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/CRUD/CRUD_OrderWin.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/CRUD/CRUD_sklad.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/CRUD/CRUD_Sotryd.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/MainWindow.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Registration.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Tables/ClinUser.axaml]
@@ -45,6 +45,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Tables/OrderWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Tables/Sklad.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/vitsn/OneDrive/Рабочий стол/HappyHouse/HappyHouse/Tables/sotrydnik.axaml]

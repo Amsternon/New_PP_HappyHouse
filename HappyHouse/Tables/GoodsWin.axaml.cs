@@ -18,12 +18,14 @@ public partial class GoodsWin : Window
     public GoodsWin()
     {
         InitializeComponent();
-        string fullTable = "SELECT tableware.ID, tableware.Name, tableware.price, colorss.Named, materials.Namer FROM tableware JOIN materials ON tableware.mater = materials.ID JOIN colorss ON tableware.color = colorss.ID";
+        string fullTable = "SELECT tableware.ID, suppliers.SuppliersName, tableware.Name_tab, tableware.price, colorss.Named, materials.Namer, category_availability.Name_ava FROM tableware JOIN materials ON tableware.mater = materials.ID JOIN colorss ON tableware.color = colorss.ID JOIN category_availability ON tableware.Availability = category_availability.idCategory_Availability JOIN suppliers ON tableware.Supplier_ID = suppliers.SuppliersID";
         ShowTable(fullTable);
+        FillStatus();
     }
 
     private List<tableware> goods;
-    string connStr = "server=127.0.0.1;database=abd10_1;port=3306;User Id=root;password=12345";
+    private List<category_availability> Availability;
+    string connStr = "server=127.0.0.1;database=abd10;port=3306;User Id=root;password=12345";
     private MySqlConnection conn;
 
     public void ShowTable(string sql)
@@ -38,10 +40,12 @@ public partial class GoodsWin : Window
             var Client = new tableware()
             {
                 ID = reader.GetInt32("ID"),
-                Name = reader.GetString("Name"),
+                SuppliersName = reader.GetString("SuppliersName"),
+                Name_tab = reader.GetString("Name_tab"),
                 Namer = reader.GetString("Namer"),
                 Named = reader.GetString("Named"),
-                price = reader.GetInt32("price")
+                price = reader.GetInt32("price"),
+                Name_ava = reader.GetString("Name_ava")
             };
             goods.Add(Client);
         }
@@ -52,7 +56,7 @@ public partial class GoodsWin : Window
     private void SearchGoods(object? sender, TextChangedEventArgs e)
     {
         var gds = goods;
-        gds = gds.Where(x => x.Name.Contains(Search_Goods.Text)).ToList();
+        gds = gds.Where(x => x.Name_tab.Contains(Search_Goods.Text)).ToList();
         DataGrid.ItemsSource = gds;
     }
 
@@ -65,7 +69,7 @@ public partial class GoodsWin : Window
 
     private void Reset_OnClick(object? sender, RoutedEventArgs e)
     {
-        string fullTable = "SELECT tableware.ID, tableware.Name, tableware.price, colorss.Named, materials.Namer FROM tableware JOIN materials ON tableware.mater = materials.ID JOIN colorss ON tableware.color = colorss.ID";
+        string fullTable = "SELECT tableware.ID, suppliers.SuppliersName, tableware.Name_tab, tableware.price, colorss.Named, materials.Namer, category_availability.Name_ava FROM tableware JOIN materials ON tableware.mater = materials.ID JOIN colorss ON tableware.color = colorss.ID JOIN category_availability ON tableware.Availability = category_availability.idCategory_Availability JOIN suppliers ON tableware.Supplier_ID = suppliers.SuppliersID";
         ShowTable(fullTable);
         Search_Goods.Text = string.Empty;
     }
@@ -86,7 +90,7 @@ public partial class GoodsWin : Window
             cmd.ExecuteNonQuery();
             conn.Close();
             goods.Remove(usr);
-            ShowTable("SELECT tableware.ID, tableware.Name, tableware.price, colorss.Named, materials.Namer FROM tableware JOIN materials ON tableware.mater = materials.ID JOIN colorss ON tableware.color = colorss.ID");
+            ShowTable("SELECT tableware.ID, suppliers.SuppliersName, tableware.Name_tab, tableware.price, colorss.Named, materials.Namer, category_availability.Name_ava FROM tableware JOIN materials ON tableware.mater = materials.ID JOIN colorss ON tableware.color = colorss.ID JOIN category_availability ON tableware.Availability = category_availability.idCategory_Availability JOIN suppliers ON tableware.Supplier_ID = suppliers.SuppliersID");
         }
         catch (Exception ex)
         {
@@ -110,5 +114,35 @@ public partial class GoodsWin : Window
         CRUD.CRUD_Goods edit = new  CRUD.CRUD_Goods(currenGoods, goods);
         edit.Show();
         this.Close();
+    }
+    private void CmbAvailability(object? sender, SelectionChangedEventArgs e)
+    {
+        var genderComboBox = (ComboBox)sender;
+        var currentGender = genderComboBox.SelectedItem as category_availability;
+        var filteredUsers = goods
+            .Where(x => x.Name_ava == currentGender.Name_ava)
+            .ToList();
+        DataGrid.ItemsSource = filteredUsers;
+    }
+
+    public void FillStatus()
+    {
+        Availability = new List<category_availability>();
+        conn = new MySqlConnection(connStr);
+        conn.Open();
+        MySqlCommand command = new MySqlCommand("select * from category_availability", conn);
+        MySqlDataReader reader = command.ExecuteReader();
+        while (reader.Read() && reader.HasRows)
+        {
+            var currentGender = new category_availability()
+            {
+                idCategory_Availability = reader.GetInt32("idCategory_Availability"),
+                Name_ava = reader.GetString("Name_ava"),
+            };
+            Availability.Add(currentGender);
+        }
+        conn.Close();
+        var genderComboBox = this.Find<ComboBox>("CmbGender");
+        genderComboBox.ItemsSource = Availability;
     }
 }

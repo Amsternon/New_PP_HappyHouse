@@ -35,7 +35,7 @@ public partial class CRUD_Goods : Window
             {
                 conn = new MySqlConnection(connStr);
                 conn.Open();
-                string add = "INSERT INTO tableware VALUES (" + Convert.ToInt32(id.Text) + ", '" + name.Text + "', '" + namer.Text + "','" + Named.Text + "','" + Convert.ToInt32(price.Text) + "');";
+                string add = "INSERT INTO tableware VALUES (" + Convert.ToInt32(id.Text) + ", '" + SuppliersName.Text + "', '" + name.Text + "', '" + namer.Text + "', '" + Named.Text + "', '" + Convert.ToInt32(price.Text) + "', '" + Name_ava.Text + "');";
                 MySqlCommand cmd = new MySqlCommand(add, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -51,7 +51,7 @@ public partial class CRUD_Goods : Window
             {
                 conn = new MySqlConnection(connStr);
                 conn.Open();
-                string upd = "UPDATE tableware SET Named = '" + Named.Text + "', price = '" +  Convert.ToInt32(price.Text) + "', Namer = " + namer.Text + ", Name = " + name.Text + " WHERE id = " + Convert.ToInt32(id.Text) + ";";
+                string upd = "UPDATE tableware SET SuppliersName = '" + SuppliersName.Text + "', Named = '" + Named.Text + "', price = '" +  Convert.ToInt32(price.Text) + "', Namer = '" + namer.Text + "', Name_tab = '" + name.Text + "', Name_ava = '" + Name_ava.Text + "' WHERE id = " + Convert.ToInt32(id.Text) + ";";
                 MySqlCommand cmd = new MySqlCommand(upd, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();

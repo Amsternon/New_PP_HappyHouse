@@ -26,7 +26,7 @@ public partial class CRUD_ClinUser : Window
         Users = users;
     }
     private MySqlConnection conn;
-    string connStr = "server=127.0.0.1;database=abd10_1;port=3306;User Id=root;password=12345";
+    string connStr = "server=127.0.0.1;database=abd10;port=3306;User Id=root;password=12345";
 
     private void Save_OnClick(object? sender, RoutedEventArgs e)
     {
@@ -37,7 +37,7 @@ public partial class CRUD_ClinUser : Window
             {
                 conn = new MySqlConnection(connStr);
                 conn.Open();
-                string add = "INSERT INTO client VALUES (" + Convert.ToInt32(ID.Text) + ", '" + surname.Text + "', '" + name.Text + "', '" + login.Text + "', '" + password.Text + "', '" + telephone.Text + "', '" + email.Text + "');";
+                string add = "INSERT INTO client VALUES (" + Convert.ToInt32(ID.Text) + ", '" + surname.Text + "', '" + name.Text + "', '" + Lastname.Text + "', '" + Adress.Text + "', '" + telephone.Text + "', '" + email.Text + "');";
                 MySqlCommand cmd = new MySqlCommand(add, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -53,7 +53,7 @@ public partial class CRUD_ClinUser : Window
             {
                 conn = new MySqlConnection(connStr);
                 conn.Open();
-                string upd = "UPDATE client SET Surname = '" + surname.Text + "', Name = '" +  name.Text + "', Login = '" + login.Text + "', Password = '" + password.Text + "', Telephone = '" + telephone.Text + "', email = '" + email.Text + "' WHERE id = " + Convert.ToInt32(ID.Text) + ";";
+                string upd = "UPDATE client SET Surname = '" + surname.Text + "', Name_clin = '" +  name.Text + "', Lastname = '" + Lastname.Text + "', Adress = '" + Adress.Text + "',  Telephone = '" + telephone.Text + "', email = '" + email.Text + "' WHERE id = " + Convert.ToInt32(ID.Text) + ";";
                 MySqlCommand cmd = new MySqlCommand(upd, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();

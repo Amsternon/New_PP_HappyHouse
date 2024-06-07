@@ -2,21 +2,35 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/posyd.ico"
-        mc:Ignorable="d" d:DesignWidth="645" d:DesignHeight="460"
-        MaxWidth="645"
-        MaxHeight="460"
+        Icon="C:\Users\vitsn\OneDrive\Рабочий стол\HappyHouse\HappyHouse\Resources/posyd.ico"
+        mc:Ignorable="d" d:DesignWidth="950" d:DesignHeight="500"
+        MaxWidth="950"
+        MaxHeight="500"
         x:Class="HappyHouse.Tables.GoodsWin"
         Title="Кухонная утварь HappyHouse">
    <Grid>
-       <Image Source="/Resources/posyda.jpg" Width="1000" Height="550"/>
+       <Image Source="/Resources/posyda.jpg" Width="950" Height="950"/>
        <StackPanel Orientation="Vertical">
             <TextBlock Foreground="Khaki" Margin = "10 10 0 0" FontSize = "20" FontWeight="Bold"> Таблица "Посуда"</TextBlock>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Foreground="Khaki" VerticalAlignment="Center" Margin = "10 10 0 0"> Поиск по наименованию Посуды: </TextBlock>
-                <TextBox Name="Search_Goods" Width="200" Margin ="65 10 0 0" TextChanged="SearchGoods"></TextBox>
+                <TextBox Name="Search_Goods" Width="200" Margin ="35 10 0 0" TextChanged="SearchGoods"></TextBox>
             </StackPanel>
 
+           <StackPanel Orientation="Horizontal">
+               <TextBlock Foreground="Khaki" VerticalAlignment="Center"
+                          x:Name="txtShow" Margin ="10 10 0 0">Наличие: </TextBlock>
+               <ComboBox Name="CmbGender"
+                         x:CompileBindings="False"
+                         SelectionChanged="CmbAvailability" Width="200" Margin ="22 10 0 0">
+                   <ComboBox.ItemTemplate>
+                       <DataTemplate>
+                           <TextBlock Text="{Binding Name_ava}"></TextBlock>
+                       </DataTemplate>
+                   </ComboBox.ItemTemplate>
+               </ComboBox>
+           </StackPanel>
+           
             <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal">
                     <StackPanel Margin="10 12 00 0">
@@ -41,10 +55,12 @@
         <DataGrid Background="DimGray" Name="DataGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
             <DataGrid.Columns>
                 <DataGridTextColumn Foreground="White" Header="Код товара" Binding="{Binding ID}"></DataGridTextColumn>
-                <DataGridTextColumn Foreground="White" Header="Наименование" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="White" Header="Поставщик" Binding="{Binding SuppliersName}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="White" Header="Наименование" Binding="{Binding Name_tab}"></DataGridTextColumn>
                 <DataGridTextColumn Foreground="White" Header="Материал" Binding="{Binding Namer}"></DataGridTextColumn>
                 <DataGridTextColumn Foreground="White" Header="Цвет" Binding="{Binding Named}"></DataGridTextColumn>
                 <DataGridTextColumn Foreground="White" Header="Цена" Binding="{Binding price}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="White" Header="Наличие" Binding="{Binding Name_ava }"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
 

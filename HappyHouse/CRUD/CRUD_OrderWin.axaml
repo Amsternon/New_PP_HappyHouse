@@ -1,7 +1,7 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/Register.ico"
+        Icon="C:\Users\vitsn\OneDrive\Рабочий стол\HappyHouse\HappyHouse\Resources/Regs.ico"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="600"
         x:Class="HappyHouse.CRUD.CRUD_OrderWin"
@@ -23,12 +23,12 @@
 
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Дата создания: </TextBlock>
-                <TextBox Name="Login" x:CompileBindings="False" Text="{Binding Login}" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Введите логин"></TextBox>
+                <TextBox Name="Login" x:CompileBindings="False" Text="{Binding Name_clin}" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Введите логин"></TextBox>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Код статуса: </TextBlock>
-                <TextBox Name="posyd" x:CompileBindings="False" Text="{Binding id_posyd}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="код посуды"></TextBox>
+                <TextBox Name="posyd" x:CompileBindings="False" Text="{Binding Name_tab}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="код посуды"></TextBox>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">

@@ -20,9 +20,9 @@ public partial class OrderWin : Window
         InitializeComponent();
         ShowTable(fullTable);
     }
-    string fullTable = "SELECT `order`.ID, worker.Name, client.Login, tableware.ID, `order`.kolichestvo, `order`.price, `order`.Date FROM `order` JOIN worker ON `order`.id_sotryd = worker.ID JOIN client ON `order`.id_client = client.ID JOIN tableware ON `order`.id_posyd = tableware.ID";
+    string fullTable = "SELECT `order`.ID, worker.Name, client.Name_clin, tableware.Name_tab, `order`.kolichestvo, `order`.price, `order`.Date FROM `order` JOIN worker ON `order`.id_sotryd = worker.ID JOIN client ON `order`.id_client = client.ID JOIN tableware ON `order`.id_posyd = tableware.ID";
     private List<order> orders;
-    string connStr = "server=127.0.0.1;database=abd10_1;port=3306;User Id=root;password=12345";
+    string connStr = "server=127.0.0.1;database=abd10;port=3306;User Id=root;password=12345";
     private MySqlConnection conn;
 
     public void ShowTable(string sql)
@@ -38,9 +38,9 @@ public partial class OrderWin : Window
             {
                 ID = reader.GetInt32("ID"),
                 Name = reader.GetString("Name"),
-                Login = reader.GetString("Login"),
-                id_posyd = reader.GetInt32("id_posyd"),
-                kolichestvo = reader.GetString("kolichestvo"),
+                Name_clin = reader.GetString("Name_clin"),
+                Name_tab = reader.GetString("Name_tab"),
+                kolichestvo = reader.GetInt32("kolichestvo"),
                 price = reader.GetInt32("price"),
                 Date = reader.GetString("Date")
             };

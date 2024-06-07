@@ -2,7 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/Ordering.ico"
+        Icon="C:\Users\vitsn\OneDrive\Рабочий стол\HappyHouse\HappyHouse\Resources/Ordering.ico"
         mc:Ignorable="d" d:DesignWidth="808" d:DesignHeight="460"
         MaxWidth="808"
         MaxHeight="460"
@@ -41,9 +41,9 @@
         <DataGrid Background="LightGray" Name="DataGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
             <DataGrid.Columns>
                 <DataGridTextColumn Foreground="Black" Header="Код товара" Binding="{Binding ID}"></DataGridTextColumn>
-                <DataGridTextColumn Foreground="Black" Header="Имя сотрудника" Binding="{Binding Name}"></DataGridTextColumn>
-                <DataGridTextColumn Foreground="Black" Header="Логин пользователя" Binding="{Binding login}"></DataGridTextColumn>
-                <DataGridTextColumn Foreground="Black" Header="Код посуды" Binding="{Binding id_posyd}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="Black" Header="Сотрудник" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="Black" Header="Клиент" Binding="{Binding Name_clin}"></DataGridTextColumn>
+                <DataGridTextColumn Foreground="Black" Header="Посуда" Binding="{Binding Name_tab}"></DataGridTextColumn>
                 <DataGridTextColumn Foreground="Black" Header="Количество" Binding="{Binding kolichestvo}"></DataGridTextColumn>
                 <DataGridTextColumn Foreground="Black" Header="Цена" Binding="{Binding price}"></DataGridTextColumn>
                 <DataGridTextColumn Foreground="Black" Header="Дата" Binding="{Binding Date}"></DataGridTextColumn>

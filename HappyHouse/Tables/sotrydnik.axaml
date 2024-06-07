@@ -2,7 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/Sotr.ico"
+        Icon="C:\Users\vitsn\OneDrive\Рабочий стол\HappyHouse\HappyHouse\Resources/Sotr.ico"
         mc:Ignorable="d" d:DesignWidth="825" d:DesignHeight="500"
         MaxWidth="825"
         MaxHeight="500"
@@ -51,14 +51,14 @@
 
                 </StackPanel>
             </StackPanel>
-
-        <DataGrid Name="DataGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
+           
+        <DataGrid Background="White" BorderBrush="Black" Name="DataGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Код Сотрудника" Binding="{Binding ID}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Имя" Binding="{Binding Name}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Отчество" Binding="{Binding Otchestvo}"></DataGridTextColumn>
-                <DataGridTextColumn Header="jobs" Binding="{Binding Names}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding LastName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Должность" Binding="{Binding Names}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Телефон" Binding="{Binding Telephone}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Почта" Binding="{Binding email}"></DataGridTextColumn>
             </DataGrid.Columns>

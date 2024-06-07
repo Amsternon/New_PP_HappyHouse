@@ -24,7 +24,7 @@ public partial class CRUD_OrderWin : Window
     }
 
     private MySqlConnection conn;
-    string connStr = "server=127.0.0.1;database=abd10_1;port=3306;User Id=root;password=12345";
+    string connStr = "server=127.0.0.1;database=abd10;port=3306;User Id=root;password=12345";
 
     private void Save_OnClick(object? sender, RoutedEventArgs e)
     {
@@ -35,7 +35,7 @@ public partial class CRUD_OrderWin : Window
             {
                 conn = new MySqlConnection(connStr);
                 conn.Open();
-                string add = "INSERT INTO order VALUES (" + Convert.ToInt32(id.Text) + ", '" + name.Text + "', '" + Login.Text + "', '" + Convert.ToInt32(posyd.Text) + "', '" + kolichestvo.Text + "', '" + Convert.ToInt32(price.Text) + "'), '" + Date.Text + "';";
+                string add = "INSERT INTO order VALUES (" + Convert.ToInt32(id.Text) + ", '" + name.Text + "', '" + Login.Text + "', '" + posyd.Text + "', '" + Convert.ToInt32(kolichestvo.Text) + "', '" + Convert.ToInt32(price.Text) + "'), '" + Date.Text + "';";
                 MySqlCommand cmd = new MySqlCommand(add, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -51,7 +51,7 @@ public partial class CRUD_OrderWin : Window
             {
                 conn = new MySqlConnection(connStr);
                 conn.Open();
-                string upd = "UPDATE order SET id_posyd = " + Convert.ToInt32(posyd.Text) + ", Date = '" +  Date.Text + "', kolichestvo = '" +  kolichestvo.Text + "', Name = '" +  name.Text + "', Login = '" +  Login.Text + "', price = " + Convert.ToInt32(price.Text) + ", WHERE ID = " + Convert.ToInt32(id.Text) + ";";
+                string upd = "UPDATE order SET Name_tab = ''" + posyd.Text + "', Date = '" +  Date.Text + "', kolichestvo = " +  Convert.ToInt32(kolichestvo.Text) + ", Name = '" +  name.Text + "', Login = '" +  Login.Text + "', price = " + Convert.ToInt32(price.Text) + ", WHERE ID = " + Convert.ToInt32(id.Text) + ";";
                 MySqlCommand cmd = new MySqlCommand(upd, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();

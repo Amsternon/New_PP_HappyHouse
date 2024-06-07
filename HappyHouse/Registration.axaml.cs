@@ -20,12 +20,12 @@ public partial class Registration : Window
         InitializeComponent();
     }
     private MySqlConnection conn;
-    private string connStr = "server=127.0.0.1;database=abd10_1;port=3306;User Id=root;password=12345";
+    private string connStr = "server=127.0.0.1;database=abd10;port=3306;User Id=root;password=12345";
     private void Reg(object? sender, RoutedEventArgs e)
     {
         conn = new MySqlConnection(connStr);
         conn.Open();
-        string regist = "INSERT INTO client VALUES (" + Convert.ToInt32(id.Text) + ", '" + Surname.Text + "', '" + Name.Text + "', '" + Login.Text + "', '" + Password.Text + "', '" + Telephone.Text + "', '" + email.Text + "');";
+        string regist = "INSERT INTO worker VALUES (" + Convert.ToInt32(id.Text) + ", '" + Surname.Text + "', '" + Name.Text + "', '" + Login.Text + "', '" + Password.Text + "', '" + Telephone.Text + "', '" + email.Text + "');";
         MySqlCommand cmd = new MySqlCommand(regist, conn);
         cmd.ExecuteNonQuery();
         conn.Close();

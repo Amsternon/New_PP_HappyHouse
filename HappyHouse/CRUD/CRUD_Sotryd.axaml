@@ -1,7 +1,7 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        Icon="C:\Users\vitsn\RiderProjects\HappyHouse\HappyHouse\Resources/sotr.ico"
+        Icon="C:\Users\vitsn\OneDrive\Рабочий стол\HappyHouse\HappyHouse\Resources/sotr.ico"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="650"
         MaxWidth="450"
@@ -26,7 +26,7 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Отчество: </TextBlock>
-                <TextBox Name="Otchestvo" x:CompileBindings="False" Text="{Binding Otchestvo}" Width="200" Height="5" Margin = "50 0 0 0" Watermark="Введите отчество"></TextBox>
+                <TextBox Name="LastName" x:CompileBindings="False" Text="{Binding LastName}" Width="200" Height="5" Margin = "50 0 0 0" Watermark="Введите отчество"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "0 25 0 0">Код должности: </TextBlock>

@@ -22,11 +22,11 @@ public partial class sotrydnik : Window
         ShowTable(fullTable);
         FillStatus();
     }
-    string fullTable = "SELECT worker.ID, worker.Surname, worker.Name, worker.Otchestvo, worker.Telephone, worker.email, jobs.Names FROM worker JOIN jobs ON worker.Dolzhnost = jobs.ID";
+    string fullTable = "SELECT worker.ID, worker.Surname, worker.Name, worker.LastName, worker.Telephone, worker.email, jobs.Names FROM worker JOIN jobs ON worker.Dolzhnost = jobs.ID";
 
     private List<worker> sotryd;
     private List<jobs> job;
-    string connStr = "server=127.0.0.1;database=abd10_1;port=3306;User Id=root;password=12345";
+    string connStr = "server=127.0.0.1;database=abd10;port=3306;User Id=root;password=12345";
     private MySqlConnection conn;
 
     public void ShowTable(string sql)
@@ -43,7 +43,7 @@ public partial class sotrydnik : Window
                 ID = reader.GetInt32("ID"),
                 Surname = reader.GetString("Surname"),
                 Name = reader.GetString("Name"),
-                Otchestvo = reader.GetString("Otchestvo"),
+                LastName = reader.GetString("LastName"),
                 Names = reader.GetString("Names"),
                 Telephone = reader.GetString("Telephone"),
                 email = reader.GetString("email")
@@ -90,7 +90,7 @@ public partial class sotrydnik : Window
             cmd.ExecuteNonQuery();
             conn.Close();
             sotryd.Remove(usr);
-            ShowTable("SELECT worker.ID, worker.Surname, worker.Name, worker.Otchestvo, worker.Telephone, worker.email, jobs.Names FROM worker JOIN jobs ON worker.Dolzhnost = jobs.ID");
+            ShowTable("SELECT worker.ID, worker.Surname, worker.Name, worker.LastName, worker.Telephone, worker.email, jobs.Names FROM worker JOIN jobs ON worker.Dolzhnost = jobs.ID");
         }
         catch (Exception ex)
         {
